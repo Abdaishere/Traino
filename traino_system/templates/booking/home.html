@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}?/20200718">
+    <h1 >welcome in train reservation </h1>
+    <p class="st">
+        The train traverse most cities in egypt  It saves time in moving between these areas and saves money compared to other means <br>of transportation  is divided into layers in terms of the first, middle and economy class based on the level of service required 
+    </p>
+    <p class="st">
+        Travel comfortably and safely with Egypt trains
+    </p>    
+    <br> <br> <br>
+    <form method="POST" >
+        {% csrf_token %}
+         <img src="{% static 'img/schedule.png' %}" alt="">
+        <input type="date" name="trip_date" > &nbsp; &nbsp;
+         <img src="{% static 'img/distance (1).png' %}" alt="">
+        <select name="source" id="source">
+            <option value="select" selected>source</option> 
+            <option value="Cairo">Cairo</option> 
+            <option value="Alex">Alexandria</option> 
+            <option value="Luxor">Luxor</option>
+            <option value="Aswan">Aswan</option>
+            <option value="Banha">Banha</option>
+            <option value="Bani swaef">Bani swaef</option>
+            <option value="qana">qana</option>
+            <option value="sohag">Sohag</option>
+            <option value="asyut">Asyut</option>
+            <option value="menia">Menia</option>
+        </select> &nbsp; &nbsp;
+        <img src="{% static 'img/distance (1).png' %}" alt="">
+        <select name="destination" id="Destination" >
+            <option value="select" selected>Destination</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Alex">Alexandria</option>
+            <option value="Luxor">Luxor</option>
+            <option value="Aswan">Aswan</option>
+            <option value="Banha">Banha</option>
+            <option value="Bani swaef">Bani swaef</option>
+            <option value="qana">qana</option>
+            <option value="sohag">Sohag</option>
+            <option value="asyut">Asyut</option>
+            <option value="menia">Menia</option>
+        </select> <br> <br> <br>
+            <div>   
+                <button><a href="/show">Show Booking</a> </button>
+            </div>  
+    </form>
+    <br>
+{%endblock%}

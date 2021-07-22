@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+<link rel="stylesheet" href="{%static 'css/login.css'%}?20200720">
+<div class="div"> 
+    <br>
+    <h1 >Login</h1>
+    <br> <br>
+    <!--<div >
+        <div >
+         {% if messages %}
+         {% for messsage in messages %}
+         {% if messsage.tags == 'info' %}
+         <div class='chip green white-text'>{{messsage}}</div>
+         {% endif %}
+          {% if messsage.tags == 'warning' %}
+         <div class='chip red white-text'>{{messsage}}</div>
+         {% endif %}
+         <br>
+            {% endfor %}
+        {%endif %}
+    </div>
+    </div>-->
+    <form method="POST">  
+        {% csrf_token %}   
+        <div>
+            <img src="{%static 'img/man-user.png'%}" >
+        <input type="text"  name= "email" placeholder="Email"><br><br><br>
+        <img src="{%static 'img/padlock.png'%}" >
+        <input type="password" name="password" id="" placeholder="Password" > <br>
+        </div>
+        <div id="n">
+            {% csrf_token %} 
+        <button class="btn btn  -primary btn-block" onclick="window.location.href='customer/dashboard'" >Log in</button>
+        </div>
+    </form>
+    <br><br>
+    
+</div>
+{%endblock%}

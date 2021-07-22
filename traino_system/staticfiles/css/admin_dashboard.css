@@ -1,0 +1,123 @@
+.container
+{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.row1
+{
+    margin-top: 40px;
+    text-align: center;
+}
+.row2
+{
+    margin-top: 20px;   
+    border: rgb(25, 29, 66);
+    border-style:solid;
+    border-width: 4px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.updatetrain
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    box-shadow: black 5px;
+}
+.updatetrain:hover
+{
+    color: rgb(59, 37, 184);
+}
+.trip
+{
+    margin-left: 5%;
+}
+.trip a
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block; 
+    font-size: 30px;
+    text-decoration: none;
+}
+.trip a:hover
+{
+    color: rgb(59, 37, 184);
+}
+.button1{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 150px;
+  }
+  .button1 a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;  
+    display:inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .button2 a
+  {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    display:inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .button1 a:after, .button2 a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover a, .button2:hover a {
+    padding-right: 25px;
+  }
+  
+  .button1:hover a:after, .button2:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+

@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+    <div>
+        <br> <br>
+        <img src="pic/visa1.png" id="pic2">
+        <form action="">
+             <img src="man-user.png">
+             <input type="text" name="card holder name" placeholder="Card Holder Name"> <br>
+             <img src="pic/debit-card.png">
+             <input type="text"  name="card number" placeholder="Card Number"> <br>
+             <img src="pic/credit-card.png">
+             <input type="date" > <br>
+             <img src="pic/pin-number.png">
+             <input type="password"  name="cvc" placeholder="CVC">
+        </form>
+        <br> <br>
+            <button id="b"  onclick="window.location.href='/visa_data'">pay</button>
+    </div>
+{%endblock%}

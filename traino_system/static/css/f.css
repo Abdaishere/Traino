@@ -1,0 +1,40 @@
+input,button{
+    width: 280px;
+    height: 30px;
+    margin-left: 10px;
+}
+div{
+    background-color: #f7f5f5;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 1px 1px 2px 2px #bdbdbd;
+    border: black;
+    border-width: 3px;
+}
+img{
+    width: 30px;
+    margin-left: 80px;
+
+}
+
+#pic1{
+      width: 150px;
+      height: 60px;
+      margin-left: 175px;
+}
+#b{
+    width: 150px;
+    height: 30px;
+    margin-left: 185px; 
+    border-radius: 5px;
+    border: none;
+    background-color:#007bff;
+    color: white;
+}
+
+#b:hover{
+    background-color: #0051ff;
+}

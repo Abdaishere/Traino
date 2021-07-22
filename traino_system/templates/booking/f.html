@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+    <div>
+        <br> <br>
+        <img src="pic/fawry-pay-english-logo-1.jpg" id="pic1" >
+        <br> <br>
+    <form action="">
+        <img src="man-user.png" alt="">
+        <input type="text" name="name" placeholder="Name"> <br> <br> 
+        <img src="pic/gmail1.png" alt="">
+        <input type="text" name="e-mail" placeholder="E-mail" > <br> <br>
+        <img src="pic/phone.png" alt="">
+        <input type="text" name = "phone number" placeholder="Phone Number"> <br> <br> <br>
+    </form>
+         <button id="b"  onclick="window.location.href='/inside_fawary'">pay</button>
+    </div>
+{%endblock%}

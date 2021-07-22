@@ -1,0 +1,38 @@
+img{
+    width: 20%;
+}
+.card{
+    height: 100vh;
+    width: 800px;
+    margin: auto;
+}
+span
+{
+    font-family:serif;
+}
+.card .label{
+    font-size: 25px;
+}
+.card .data{
+    font-size: 18px;
+}
+.card .profileimage{
+    margin-bottom: 40px;
+}
+.card .profiledata{
+    border: 1px solid #ced4da;
+    border-radius: 3px; 
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.btn{ 
+    width: 60%;  
+    font-size: 20px;
+    text-align: center;
+}
+.UP
+{
+    margin-top: 30px;
+    text-align: center;
+}

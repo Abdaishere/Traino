@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/show.css' %}?20200719">
+    <div class="parent">
+            {%for a in data%}
+            <div class ="trip">
+            <b><p> &nbsp; &nbsp; Trip number :{{a.trip_number}}</p></b>
+            <b><p>&nbsp; &nbsp; source :{{a.source}}</p></b>
+            <b><p>&nbsp; &nbsp; Destination :{{a.destination}}</p></b>
+            <b><p>&nbsp; &nbsp; Avalible seats :{{a.available_seat}}</p></b>
+            <b><p>&nbsp; &nbsp; Time :{{a.trip_time}}</p></b>
+            <b><p>&nbsp; &nbsp; Trip price :{{a.ticket_price}}</p></b>
+            <b><p>&nbsp; &nbsp; Date :{{a.trip_date}}</p></b> &nbsp; &nbsp;
+            <button class="btn"><a href="/book">Book</a></button>
+        </div>
+        {%endfor%}
+    </div>
+{%endblock%}    

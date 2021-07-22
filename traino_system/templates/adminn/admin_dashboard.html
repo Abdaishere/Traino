@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/admin_dashboard.css' %}">
+        <div class="container">
+            <div class= "row1">
+                <button class="button1"><a href="/newtrain"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Train</a> </button> 
+            </div>
+            {%if data%}
+            {%for a in data%}
+            <div class="row2">
+                <a href="/updatetrain/{{a.train_number}}" class="updatetrain"> Train {{a.train_number}}</a> 
+                <div class="trip">
+                    <a href="/newtrip" class="updatetrip"> Trip {{a.trip}}</a> 
+                    <button class="button2"><a href="update_trip/{{a.train_number}}" ><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Trip</a> </button>
+                </div>
+            </div>
+            {%endfor%}
+            {%endif%}
+        </div>
+{%endblock%}

@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+
+    <div id="w">
+    <br>
+    <br>
+    <h1>Booking </h1>
+    <br> 
+    <div id="b">
+        <form action="">
+            <img src="man-user.png" >
+            <input type="text" name="full_name" placeholder="Full Name"  class="input"> <br>             
+        </form>
+    </div>
+    <br>
+    <div id="v">
+    &nbsp;  &nbsp; 
+    <img src="pic/visa1.png"  class="pic"> 
+    <button  onclick="window.location.href='/visa'" ><input type="radio" name="nnn" id="" ></button> &nbsp; &nbsp;
+    <img src="pic/fawry-pay-english-logo-1.jpg"  class="pic"> 
+    <button  onclick="window.location.href='/fawary'" ><input type="radio" name="nnn" id=""></button><br> <br>
+    <button id="confirm" ><a href="#">confirm</a>  </button>
+    </div>
+    </div>
+{%endblock%}

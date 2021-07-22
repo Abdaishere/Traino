@@ -1,0 +1,19 @@
+.but{
+    margin-left: 20%;  
+}
+.btn
+{
+    margin-left: 100px;
+}
+button{
+    width:200px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.card{
+    height: 80vh;
+    width: 800px;
+    margin: auto;
+}
