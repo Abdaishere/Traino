@@ -20,14 +20,6 @@ The admin dashboard provides an easy-to-use interface for administrators to mana
 
 Traino also integrates with popular payment gateways, making it easy for users to pay for their tickets using their preferred payment method. It supports multiple languages, making it accessible to users from different regions.
 
-## Installation
-
-For installation and usage instructions, please refer to the README file provided in the repository.
-
-## Contributing
-
-Contributions to Traino are welcome! If you would like to contribute, please follow the guidelines provided in the CONTRIBUTING file.
-
 ## License
 
 Traino is open source software licensed under the MIT License. For more information, please refer to the LICENSE file.
